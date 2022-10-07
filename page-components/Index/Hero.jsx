@@ -8,8 +8,8 @@ const Hero = () => {
     <Wrapper>
       <div>
         <h1 className={styles.title}>
-          <span className={styles.nextjs}>Next.js</span>
-          <span className={styles.mongodb}>MongoDB</span>
+          <span className={styles.nextjs}>Next</span>
+          <span className={styles.mongodb}>Bug Tracker</span>
           <span>App</span>
         </h1>
         <Container justifyContent="center" className={styles.buttons}>
@@ -19,20 +19,22 @@ const Hero = () => {
             </Link>
           </Container>
           <Spacer axis="horizontal" size={1} />
-          <Container>
-            <ButtonLink
-              href="https://github.com/hoangvvo/nextjs-mongodb-app"
-              type="secondary"
-              className={styles.button}
-            >
-              GitHub
-            </ButtonLink>
-          </Container>
         </Container>
-        <p className={styles.subtitle}>
-          A Next.js and MongoDB web application, designed with simplicity for
-          learning and real-world applicability in mind.
-        </p>
+
+        <Container>
+          <p className={styles.subtitle}>
+            A Next.js and MongoDB web application, designed with simplicity for
+            learning and real-world applicability in mind. Designed with Hoang
+            Vo&#39;s template and amazing work with next-connect.
+          </p>
+          <ButtonLink
+            href="https://github.com/hoangvvo/nextjs-mongodb-app"
+            type="secondary"
+            className={styles.button}
+          >
+            GitHub
+          </ButtonLink>
+        </Container>
       </div>
     </Wrapper>
   );
